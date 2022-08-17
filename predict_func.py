@@ -9,7 +9,7 @@ model = load_model("Better_model.h5")
 def predict(img_data):
   
     percen_list = []
-    img_data = cv2.imread('/data/RD')
+    img_data = cv2.imread('data/RD.jpg')
     img_data = cv2.resize(img_data, (128,128))
 
     img_data =  np.array(img_data)
