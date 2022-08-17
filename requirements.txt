@@ -12,7 +12,7 @@ jsonpickle == 2.2.0
 numpy == 1.22.3
 
 # C:\Users\ASUS TUF GAMING\Desktop\test\predict_func.py: 5
-opencv_python == 4.5.2.54
+opencv_python == 4.6.0.66
 
 # C:\Users\ASUS TUF GAMING\Desktop\test\predict_func.py: 1,2
 tensorflow_gpu == 2.8.0
