@@ -3,8 +3,7 @@ from flask import Flask,Response
 from flask import render_template as rt
 import numpy as np
 import jsonpickle
-#heroku ID sur.one9309@gmail.com
-#pass surone_0955407529
+
 
 app = Flask(__name__)
 from predict_func import predict
