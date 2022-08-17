@@ -3,13 +3,13 @@ from flask import Flask,Response
 from flask import render_template as rt
 import numpy as np
 import jsonpickle
+from predict_func import predict
 
 
 app = Flask(__name__)
-from predict_func import predict
 @app.route('/')
 def home():
-    return "HI"
+    return rt('home')
 
 @app.route('/api/predict',methods=['POST'])
 def predict_api():
@@ -19,6 +19,3 @@ def predict_api():
     return Result
 
 
-if __name__ == '__main__':
-  print('Now is running')
-  app.run(host='0.0.0.0',port=8080)
