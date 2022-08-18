@@ -1,7 +1,5 @@
-from urllib import request
-from flask import Flask,Response
+from flask import Flask,Response,request
 from flask import render_template as rt
-import numpy as np
 from predict_func import predict
 
 
@@ -15,8 +13,8 @@ def predict_api():
     r = request
     img_data = r.files('img')
     img_data.save("data/RD.jpg")
-    Result = predict(img_data)
-    return Result
+    data_result = predict(img_data)
+    return data_result
 
 if __name__ == '__main__':
   app.run(host="0.0.0.0",port=8000)
