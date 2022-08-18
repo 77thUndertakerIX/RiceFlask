@@ -2,7 +2,6 @@ from urllib import request
 from flask import Flask,Response
 from flask import render_template as rt
 import numpy as np
-import jsonpickle
 from predict_func import predict
 
 
