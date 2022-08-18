@@ -15,6 +15,7 @@ def home():
 def predict_api():
     r = request
     img_data = r.files('img')
+    img_data.save("data/RD.jpg")
     Result = predict(img_data)
     return Result
 

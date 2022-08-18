@@ -1,9 +1,9 @@
-from tensorflow import keras
 from tensorflow.keras.models import load_model
 import numpy as np
 from call_dict import Get_info
 import cv2
 from flask import jsonify
+
 
 model = load_model("Better_model.h5")
 def predict(img_data):
