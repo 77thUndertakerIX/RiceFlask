@@ -9,7 +9,7 @@ from predict_func import predict
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return rt('home')
+    return rt('home.html')
 
 @app.route('/api/predict',methods=['POST'])
 def predict_api():

@@ -13,3 +13,5 @@ opencv_python == 4.6.0.66
 
 # C:\Users\ASUS TUF GAMING\Desktop\test\predict_func.py: 1,2
 tensorflow_gpu == 2.8.0
+
+Gunicorn
