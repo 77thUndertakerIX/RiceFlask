@@ -14,6 +14,7 @@ def predict_api():
     img_data = r.files['image']
     img_data.save("data/RD.jpg")
     data_result = predict(img_data)
+    
     return data_result
 
 if __name__ == '__main__':
