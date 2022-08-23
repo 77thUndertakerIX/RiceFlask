@@ -11,7 +11,7 @@ def home():
 @app.route('/api/predict',methods=['POST'])
 def predict_api():
     r = request
-    img_data = r.files('img')
+    img_data = r.files['image']
     img_data.save("data/RD.jpg")
     data_result = predict(img_data)
     return data_result
