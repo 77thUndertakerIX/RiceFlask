@@ -10,6 +10,7 @@ def home():
 
 @app.route('/api/predict',methods=['POST'])
 def predict_api():
+    
     r = request
     img_data = r.files['image']
     img_data.save("data/RD.jpg")
