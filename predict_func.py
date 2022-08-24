@@ -53,7 +53,8 @@ def predict(img_data):
           "Result" :result, #The most possible Disease's name
           "percentage": percentage,
           "NameWithPercen": percen_list,
-          "Info": Get_info(result), #send the Disease name to get the information 
+          "Info": Get_info(result), #send the Disease name to get the information
+          "type" : type(Get_info(result)) 
       })
 
     
